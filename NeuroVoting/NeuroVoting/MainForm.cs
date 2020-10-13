@@ -71,7 +71,7 @@ namespace NeuroVoting
                 {
                     if (!(c is ContextMenuStrip))
                     {
-                        if (c == MainInfoLabel && (Is_Discuss || (OppositeCLB.Items != null || PlacetCLB.Items != null)))
+                        if (c == MainInfoLabel && (Is_Discuss || (OppositeCLB.Items.Count() > 0 || PlacetCLB.Items.Count > 0)))
                             return;
                         if (c == DebateB)
                         {
@@ -137,6 +137,9 @@ namespace NeuroVoting
             OppositeCLB.Items.Clear();
             PlacetCLB.Items.Clear();
             ScoreLabel.BackColor = Color.FromKnownColor(KnownColor.Orange);
+            ScoreLabel.Text = "";
+            OppositeCLB.BackColor = Color.FromKnownColor(KnownColor.Firebrick);
+            PlacetCLB.BackColor = Color.FromKnownColor(KnownColor.Green);
             ComponentResourceManager resources = new ComponentResourceManager(typeof(MainForm));
             resources.ApplyResources(MainInfoLabel, MainInfoLabel.Name);
         }
