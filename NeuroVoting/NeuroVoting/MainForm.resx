@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LanguageB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="LanguageB.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LanguageB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1149, 3</value>
+  </data>
+  <data name="LanguageB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LanguageB.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LanguageB.Text" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <metadata name="helpToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>440, 45</value>
+  </metadata>
+  <data name="LanguageB.ToolTip" xml:space="preserve">
+    <value>Click here to change language</value>
+  </data>
+  <data name="&gt;&gt;LanguageB.Name" xml:space="preserve">
+    <value>LanguageB</value>
+  </data>
+  <data name="&gt;&gt;LanguageB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LanguageB.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;LanguageB.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DescRTB.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="DescRTB.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DescRTB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Print, 21.75pt, style=Italic</value>
+  </data>
+  <data name="DescRTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 320</value>
+  </data>
+  <data name="DescRTB.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="DescRTB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 177</value>
+  </data>
+  <data name="DescRTB.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="DescRTB.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DescRTB.ToolTip" xml:space="preserve">
+    <value>Enter description of selected object here</value>
+  </data>
+  <data name="&gt;&gt;DescRTB.Name" xml:space="preserve">
+    <value>DescRTB</value>
+  </data>
+  <data name="&gt;&gt;DescRTB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DescRTB.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;DescRTB.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="progressBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 250</value>
+  </data>
+  <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 70</value>
+  </data>
+  <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="progressBar.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
+    <value>progressBar</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="propertyGrid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="propertyGrid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="propertyGrid.HelpVisible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="propertyGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 497</value>
+  </data>
+  <data name="propertyGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 140</value>
+  </data>
+  <data name="propertyGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.Name" xml:space="preserve">
+    <value>propertyGrid</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DebateB.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <metadata name="ChangeDecisionCMS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>20, 17</value>
+  </metadata>
+  <data name="ChangeDecisionCMS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Script, 14.25pt, style=Italic</value>
+  </data>
+  <data name="ChangeDecisionCMS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 78</value>
+  </data>
+  <data name="&gt;&gt;ChangeDecisionCMS.Name" xml:space="preserve">
+    <value>ChangeDecisionCMS</value>
+  </data>
+  <data name="&gt;&gt;ChangeDecisionCMS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DebateB.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="DebateB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 26.25pt, style=Bold</value>
+  </data>
+  <data name="DebateB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 175</value>
+  </data>
+  <data name="DebateB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 75</value>
+  </data>
+  <data name="DebateB.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="DebateB.Text" xml:space="preserve">
+    <value>Start Debate</value>
+  </data>
+  <data name="&gt;&gt;DebateB.Name" xml:space="preserve">
+    <value>DebateB</value>
+  </data>
+  <data name="&gt;&gt;DebateB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DebateB.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;DebateB.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ScoreLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ScoreLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="ScoreLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 100</value>
+  </data>
+  <data name="ScoreLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 75</value>
+  </data>
+  <data name="ScoreLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ScoreLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="ScoreLabel.ToolTip" xml:space="preserve">
+    <value>Click here to change presentation method</value>
+  </data>
+  <data name="&gt;&gt;ScoreLabel.Name" xml:space="preserve">
+    <value>ScoreLabel</value>
+  </data>
+  <data name="&gt;&gt;ScoreLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ScoreLabel.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;ScoreLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="ArgumentCMS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>143, 48</value>
+  </metadata>
+  <data name="ArgumentCMS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Script, 14.25pt, style=Italic</value>
+  </data>
+  <data name="ArgumentCMS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 78</value>
+  </data>
+  <data name="&gt;&gt;ArgumentCMS.Name" xml:space="preserve">
+    <value>ArgumentCMS</value>
+  </data>
+  <data name="&gt;&gt;ArgumentCMS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PlacetCLB.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="PlacetCLB.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="PlacetCLB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Print, 24pt</value>
+  </data>
+  <data name="PlacetCLB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>784, 100</value>
+  </data>
+  <data name="PlacetCLB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 537</value>
+  </data>
+  <data name="PlacetCLB.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PlacetCLB.ToolTip" xml:space="preserve">
+    <value>Left click to select argument.
+Right click to add/delete selected argument.</value>
+  </data>
+  <data name="&gt;&gt;PlacetCLB.Name" xml:space="preserve">
+    <value>PlacetCLB</value>
+  </data>
+  <data name="&gt;&gt;PlacetCLB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlacetCLB.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;PlacetCLB.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="OppositeCLB.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="OppositeCLB.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OppositeCLB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Print, 24pt</value>
+  </data>
+  <data name="OppositeCLB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 100</value>
+  </data>
+  <data name="OppositeCLB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 537</value>
+  </data>
+  <data name="OppositeCLB.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="OppositeCLB.ToolTip" xml:space="preserve">
+    <value>Left click to select argument.
+Right click to add/delete selected argument.</value>
+  </data>
+  <data name="&gt;&gt;OppositeCLB.Name" xml:space="preserve">
+    <value>OppositeCLB</value>
+  </data>
+  <data name="&gt;&gt;OppositeCLB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppositeCLB.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;OppositeCLB.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="MainInfoLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="MainInfoLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Script, 36pt</value>
+  </data>
+  <data name="MainInfoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MainInfoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1184, 100</value>
+  </data>
+  <data name="MainInfoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="MainInfoLabel.Text" xml:space="preserve">
+    <value>Which decision will you discuss?</value>
+  </data>
+  <data name="MainInfoLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="MainInfoLabel.ToolTip" xml:space="preserve">
+    <value>Click here to select decision properties</value>
+  </data>
+  <data name="&gt;&gt;MainInfoLabel.Name" xml:space="preserve">
+    <value>MainInfoLabel</value>
+  </data>
+  <data name="&gt;&gt;MainInfoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainInfoLabel.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;MainInfoLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="MainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="MainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1184, 637</value>
+  </data>
+  <data name="MainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Name" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="openTSMI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 34</value>
+  </data>
+  <data name="openTSMI.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 6</value>
+  </data>
+  <data name="createTSMI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 34</value>
+  </data>
+  <data name="createTSMI.Text" xml:space="preserve">
+    <value>Create </value>
+  </data>
+  <data name="addNewArgumentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 34</value>
+  </data>
+  <data name="addNewArgumentToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add new argument</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 6</value>
+  </data>
+  <data name="deleteArgumentTSMI.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Del</value>
+  </data>
+  <data name="deleteArgumentTSMI.ShowShortcutKeys" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="deleteArgumentTSMI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 34</value>
+  </data>
+  <data name="deleteArgumentTSMI.Text" xml:space="preserve">
+    <value>Delete argument</value>
+  </data>
+  <metadata name="DecisionOFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>285, 21</value>
+  </metadata>
+  <data name="DecisionOFD.Filter" xml:space="preserve">
+    <value>Decision xml files|*.xml</value>
+  </data>
+  <data name="DecisionOFD.Title" xml:space="preserve">
+    <value>Which decision will you discuss? </value>
+  </data>
+  <metadata name="DecisionSFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>289, 44</value>
+  </metadata>
+  <data name="DecisionSFD.Filter" xml:space="preserve">
+    <value>Decision xml files|*.xml</value>
+  </data>
+  <data name="DecisionSFD.Title" xml:space="preserve">
+    <value>Where decision file will be placed and what name it should have?</value>
+  </data>
+  <metadata name="progressTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>434, 18</value>
+  </metadata>
+  <metadata name="EndDebateCMS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 48</value>
+  </metadata>
+  <data name="EndDebateCMS.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe Print, 14.25pt, style=Italic</value>
+  </data>
+  <data name="EndDebateCMS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 86</value>
+  </data>
+  <data name="&gt;&gt;EndDebateCMS.Name" xml:space="preserve">
+    <value>EndDebateCMS</value>
+  </data>
+  <data name="&gt;&gt;EndDebateCMS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PauseTSMI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 38</value>
+  </data>
+  <data name="PauseTSMI.Text" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="EndCMSSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 6</value>
+  </data>
+  <data name="EndTSMI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 38</value>
+  </data>
+  <data name="EndTSMI.Text" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>79</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1184, 637</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 675</value>
+  </data>
+  <data name="&gt;&gt;openTSMI.Name" xml:space="preserve">
+    <value>openTSMI</value>
+  </data>
+  <data name="&gt;&gt;openTSMI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;createTSMI.Name" xml:space="preserve">
+    <value>createTSMI</value>
+  </data>
+  <data name="&gt;&gt;createTSMI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addNewArgumentToolStripMenuItem.Name" xml:space="preserve">
+    <value>addNewArgumentToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;addNewArgumentToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;deleteArgumentTSMI.Name" xml:space="preserve">
+    <value>deleteArgumentTSMI</value>
+  </data>
+  <data name="&gt;&gt;deleteArgumentTSMI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DecisionOFD.Name" xml:space="preserve">
+    <value>DecisionOFD</value>
+  </data>
+  <data name="&gt;&gt;DecisionOFD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DecisionSFD.Name" xml:space="preserve">
+    <value>DecisionSFD</value>
+  </data>
+  <data name="&gt;&gt;DecisionSFD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressTimer.Name" xml:space="preserve">
+    <value>progressTimer</value>
+  </data>
+  <data name="&gt;&gt;progressTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PauseTSMI.Name" xml:space="preserve">
+    <value>PauseTSMI</value>
+  </data>
+  <data name="&gt;&gt;PauseTSMI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EndCMSSeparator.Name" xml:space="preserve">
+    <value>EndCMSSeparator</value>
+  </data>
+  <data name="&gt;&gt;EndCMSSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EndTSMI.Name" xml:space="preserve">
+    <value>EndTSMI</value>
+  </data>
+  <data name="&gt;&gt;EndTSMI.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;helpToolTip.Name" xml:space="preserve">
+    <value>helpToolTip</value>
+  </data>
+  <data name="&gt;&gt;helpToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
