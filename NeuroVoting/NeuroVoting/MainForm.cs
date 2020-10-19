@@ -10,8 +10,9 @@ using System.Threading;
 
 namespace NeuroVoting
 {
-    public partial class MainForm : Form
+    public partial class VotingForm : Form
     {
+        #region Fields
         private bool is_discuss = false;
         bool Is_Discuss
         {
@@ -61,7 +62,7 @@ namespace NeuroVoting
                 else throw new Exception();
 
                 System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
-                ComponentResourceManager resources = new ComponentResourceManager(typeof(MainForm));
+                ComponentResourceManager resources = new ComponentResourceManager(typeof(VotingForm));
                 string[] vs =
                 {
                     DebateB.Text,
@@ -71,7 +72,7 @@ namespace NeuroVoting
                 {
                     if (!(c is ContextMenuStrip))
                     {
-                        if (c == MainInfoLabel && (Is_Discuss || (OppositeCLB.Items.Count() > 0 || PlacetCLB.Items.Count > 0)))
+                        if (c == MainInfoLabel && (Is_Discuss || (OppositeCLB.Items.Count > 0 || PlacetCLB.Items.Count > 0)))
                             return;
                         if (c == DebateB)
                         {
@@ -117,6 +118,7 @@ namespace NeuroVoting
             Percent
         }
         private ResultShowType RST = ResultShowType.Percent;
+        Decision currentDecision;
         Decision CurrentDecision
         {
             get
@@ -128,19 +130,23 @@ namespace NeuroVoting
                 if (currentDecision != null)
                    currentDecision.SaveDecision();
                 currentDecision = value;
-                if (value != new Decision() && value != null && value.Name != null)
+                if (value != null && value != new Decision() && value.Name != null)
                     DecisionRefresh();
             }
         }
+        #endregion
+
+        #region Initialize
         private void DecisionClear()
         {
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(VotingForm));
             OppositeCLB.Items.Clear();
             PlacetCLB.Items.Clear();
-            ScoreLabel.BackColor = Color.FromKnownColor(KnownColor.Orange);
-            ScoreLabel.Text = "";
             OppositeCLB.BackColor = Color.FromKnownColor(KnownColor.Firebrick);
             PlacetCLB.BackColor = Color.FromKnownColor(KnownColor.Green);
-            ComponentResourceManager resources = new ComponentResourceManager(typeof(MainForm));
+            ScoreLabel.BackColor = Color.FromKnownColor(KnownColor.Orange);
+            ScoreLabel.Text = "";
+            
             resources.ApplyResources(MainInfoLabel, MainInfoLabel.Name);
         }
         private void DecisionRefresh()
@@ -174,13 +180,16 @@ namespace NeuroVoting
             }
             #endregion
         }
-        Decision currentDecision;
-        public MainForm()
+        
+        public VotingForm()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region Cosmetic
+
+        #region Localization
         private string DynamicControlLocalization(Control C, int state)
         {
             if (C == ScoreLabel)
@@ -223,6 +232,14 @@ namespace NeuroVoting
             }
             else return String.Empty;
         }
+        private void LanguageB_Click(object sender, EventArgs e)
+        {
+            int cur = (int)ELang;
+            cur++;
+            cur %= typeof(ELanguage).GetFields().Count() - 1;
+            ELang = (ELanguage)cur;
+        }
+        #endregion
         private void CLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             bool is_placet = sender == PlacetCLB;
@@ -244,10 +261,8 @@ namespace NeuroVoting
         private void MainInfoLabel_Click(object sender, EventArgs e)
         {
             if (CurrentDecision != null && Is_Discuss)
-            {
                 propertyGrid.SelectedObject = CurrentDecision;
-            }
-            else if (CurrentDecision != null && CurrentDecision.EndDate == null)
+            else if (CurrentDecision != null && CurrentDecision.EndDate != null)
             {
                 DescRTB.Text = CurrentDecision.Description;
                 DescRTB.Enabled = !(DescRTB.ReadOnly = DateTime.Now - CurrentDecision.EndDate > TimeSpan.FromDays(1));
@@ -353,7 +368,7 @@ namespace NeuroVoting
         #region Work
         private void TakeDecision()
         {
-            if (CurrentDecision.EndDate != DateTime.MinValue)
+            if (CurrentDecision.EndDate != null && CurrentDecision.EndDate != DateTime.MinValue)
             {
                 if (CurrentDecision.PlacetSumWeight > CurrentDecision.OppositeSumWeight)
                 {
@@ -366,24 +381,20 @@ namespace NeuroVoting
                     PlacetCLB.BackColor = ScoreLabel.BackColor = OppositeCLB.BackColor;
                 }
                 else if (CurrentDecision.PlacetSumWeight == CurrentDecision.OppositeSumWeight)
-                {
                     ScoreLabel.Text = DynamicControlLocalization(ScoreLabel, 2);
-                }
                 DescRTB.ReadOnly = false;
             }
-            else ScoreLabel.Text = DynamicControlLocalization(ScoreLabel, 2);
+            else 
+                ScoreLabel.Text = DynamicControlLocalization(ScoreLabel, 2);
         }
+
         #region OpenSaveDecision
         private void DebateB_Click(object sender, EventArgs e)
         {
             if (CurrentDecision == null || !Is_Discuss)
-            {
                 ChangeDecisionCMS.Show(MousePosition.X, MousePosition.Y);
-            }
             else
-            {
                 EndDebateCMS.Show(MousePosition.X, MousePosition.Y);
-            }
         }
         private void DecisionTSMI_Click(object sender, EventArgs e)
         {
@@ -446,6 +457,11 @@ namespace NeuroVoting
             Is_Discuss = false;
             DebateB.ContextMenuStrip = ChangeDecisionCMS;
         }
+        private void CLB_KeyPress(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+                deleteArgumentTSMI.PerformClick();
+        }
         #endregion
 
         #region Arguments
@@ -480,21 +496,5 @@ namespace NeuroVoting
         #endregion
 
         #endregion
-
-        private void CLB_KeyPress(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Delete)
-            {
-                deleteArgumentTSMI.PerformClick();
-            }
-        }
-
-        private void LanguageB_Click(object sender, EventArgs e)
-        {
-            int cur = (int)ELang; 
-            cur++;
-            cur %= typeof(ELanguage).GetFields().Count() - 1;
-            ELang = (ELanguage)cur;
-        }
     }
 }

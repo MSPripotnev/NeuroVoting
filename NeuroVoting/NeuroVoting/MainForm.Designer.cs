@@ -1,6 +1,6 @@
 ﻿namespace NeuroVoting
 {
-    partial class MainForm
+    partial class VotingForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VotingForm));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.LanguageB = new System.Windows.Forms.Button();
             this.DescRTB = new System.Windows.Forms.RichTextBox();

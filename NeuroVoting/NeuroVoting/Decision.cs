@@ -70,6 +70,7 @@ namespace NeuroVoting
             }
         }
         #endregion
+
         #region Construct
         /// <summary>
         /// Constuctor of new empty decision
@@ -112,6 +113,7 @@ namespace NeuroVoting
             }
             return Math.Round(sum / MaxWeight, decimals);
         }
+
         #region XDocumentWork
         public void AddArgument(Argument arg)
         {
